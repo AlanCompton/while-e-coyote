@@ -1,13 +1,13 @@
 const prompt = require(`prompt-sync`)({signt: true});
 
-console.log(`Enter x: `);
+console.log(`Enter x:`)
 let x = Number(prompt(`> `));
-console.log(`Enter y: `)
+console.log(`Enter y:`);
 let y = Number(prompt(`> `));
 
-while(x % y !== 0){
+while(x % y > 0){
+    x += 1;
     console.log(x);
-    x ++;
 }
 
-console.log(`${x} is divisible by ${y}.`);
+console.log(`${x} is divisible by ${y}`);

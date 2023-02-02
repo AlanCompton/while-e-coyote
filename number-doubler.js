@@ -1,9 +1,9 @@
 const prompt = require(`prompt-sync`)({signt: true});
 
-let num = Number(prompt(`Enter a number: `));
+console.log(`Enter a number: `);
+let x = Number(prompt(`> `));
 
-while(num < 100){
-    num *= 2;
-
-    console.log(num);
+while(x <= 100){
+    x = x * 2;
+    console.log(x);
 }

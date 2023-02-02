@@ -1,12 +1,9 @@
 const prompt = require(`prompt-sync`)({signt: true});
 
-let init = prompt(`Please enter some text: `);
-let init2 = init;
+console.log(`Enter a string`);
+let x = prompt(`> `);
 
-console.log(init);
-
-while(init.length < 10){
-    init += init2;
-
-    console.log(init);
+while(x.length <= 10){
+    x = x + x;
+    console.log(`> ${x}`);
 }
